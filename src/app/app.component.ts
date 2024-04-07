@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {CounterComponent} from "./counter/counter.component";
 import {TodoListComponent} from "./todo-list/todo-list.component";
+import {TestComponentComponent} from "./test-component/test-component.component";
 
 @Component({
   selector: 'app-root',
@@ -9,9 +10,13 @@ import {TodoListComponent} from "./todo-list/todo-list.component";
   styleUrls: ['./app.component.css'],
   imports: [
     CounterComponent,
-    TodoListComponent
+    TodoListComponent,
+    TestComponentComponent
   ]
 })
 export class AppComponent {
 
+  logEvent() {
+    console.log('123')
+  }
 }

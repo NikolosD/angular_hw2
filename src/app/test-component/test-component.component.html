@@ -1,0 +1,9 @@
+<p>{{task}}</p>
+<input #newItem/>
+<button (click)="addNewItem(newItem.value)">Meow</button>
+
+@for (item of items; track item){
+  <li>{{item}}</li>
+  <button (click)="removeItem($index)">Remove</button>
+}
+
